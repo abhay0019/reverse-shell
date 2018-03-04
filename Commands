@@ -1,0 +1,61 @@
+
+
+myterminal()
+~~~~~~~~~~~~~
+
+quit --> close connection to all client and close myterminal
+
+listusers --> show list of connected clients
+
+select idx --> select user no idx
+
+group_send ( * (everyone) / idx1,idx2,idx3,idx4... / idx1,idx2-idx3,idx3-idx5... ) command_to_send --> sends commands to group of provided users !!
+
+
+send_commands()
+~~~~~~~~~~~~~~~~
+
+dieclient --> to kill client permanently 
+
+
+cwd  --> current working directory
+
+
+quit --> close connection to current client
+
+
+
+	 --> catcopy filename --> copy file filename 
+catcopy--| 
+         --> catcopy *   --> copy all remote files in current folder
+
+
+	 --> catsend filename --> send file filename 
+catsend--| 
+         --> catsend *   --> send all server files to remote
+
+
+me_command --> Executes commands on Server Itself
+
+
+speak text_to_speak --> speak text_to_speak to client
+
+
+microphone <b(N stream a N burst )> <s( 0/1 (record/don't record) )>  --> streams user microphone
+
+
+screenshot n --> takes n screenshots of remote machine screen
+
+
+capturepic n --> capture n images
+
+
+capturevideo <width heigh>  <1/0 (Gray Image/No Gray or Color)> --> captures and stores video with <width x height resolution if provided>
+
+
+
+screenrecord <x y x1 y1>  < cr<percentage resize> / dr<percentage resize> / cd / dd > --> starts showing remote machine screen with rectangle given as (x,y) (x1,y1) if provided otherwise full length and c--> compress(gray scale display) and r-->resize and d-->don't
+ 
+
+( rest of normal linux commands )
+
